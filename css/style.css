@@ -82,6 +82,26 @@ nav a:hover{
 	background-color: #232324;
 }
 
+/*Welcome*/
+
+.welcome{
+	min-height: 168px;
+	background-color: #eb4f4e;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0px 1px 1px #c34b2a;
+}
+
+.welcome p{
+	font-size: 20px;
+	margin-top: 22px;
+}
+
+h1{
+	font-size: 60px;
+	padding-top: 47px;
+}
+
 /* start */
 
 .start{
