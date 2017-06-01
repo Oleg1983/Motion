@@ -29,6 +29,7 @@ header{
 .wrapper{
 	max-width: 970px;
 	margin: 0 auto;
+
 }
 
 .logo{
@@ -124,9 +125,13 @@ h2{
 }
 
 .items{	
-	overflow: hidden;
+	// overflow: hidden;
 	text-align: center;
 	margin-top: 36px;
+	// outline: 1px solid #fff;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
 }
 
 .items h3{
@@ -138,18 +143,11 @@ h2{
 }
 
 .item{
-	/*outline: 1px solid #fff;*/
-	float: left;
-	width: 238px;
-	margin-right: 86px;
-}
-
-.item:first-child{
-	margin-left: 42px;
-}
-
-.item:last-child{
-	margin-right: 42px;
+	// outline: 1px solid #fff;
+	// float: left;
+	// width: 24.536%; /*238px*/
+	// margin: 0 4.3299%;
+	flex-basis:238px;
 }
 
 /* expert */
@@ -158,6 +156,7 @@ h2{
 	min-height: 516px;
 	background-color: #6cc372;
 	text-align: center;
+	padding-bottom: 24px;
 }
 
 .experts button{
@@ -188,8 +187,11 @@ h2{
 
 .mates{
 	/*outline: 1px solid #000;*/
-	overflow: hidden;
-	margin-top: 38px;	
+	// overflow: hidden;
+	// margin-top: 38px;
+	display: flex;
+	flex-wrap:wrap;	
+	justify-content:space-around;
 }
 
 .mates h3{
@@ -206,22 +208,25 @@ h2{
 }
 
 .mate{
-	width: 228px;
+	// width: 228px;
+	flex-basis:228px;
 	height: 342px;
 	background-color: #fff;
-	float: left;
-	margin-right: 11px;
+	// float: left;
+	// margin-right: 11px;
 	padding-top: 24px;
 	border-radius: 5px;
+	margin-top: 38px;
+	// margin-bottom: 24px;
 }
 
-.mate:first-child{
-	margin-left: 13px;
-}
+// .mate:first-child{
+// 	margin-left: 13px;
+// }
 
-.mate:last-child{
-	margin-right: 12px;
-}
+// .mate:last-child{
+// 	margin-right: 12px;
+// }
 
 footer{
 	min-height: 48px;
@@ -259,4 +264,10 @@ footer{
 }
 
 
-
+// @media screen and (max-width: 620px){
+// 	.item{
+// 		float: none;
+// 		width: 90%;
+// 		margin: 0 auto;
+// 	}
+// }
